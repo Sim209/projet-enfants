@@ -13,7 +13,7 @@ function Eteint_les_LEDs () {
     //% block="Allume les leds  $direction à la vitesse de $speed \\%"
     //% speed.min=0 speed.max=100
     //% group="Lampes Voiture" weight=99
-function Allume_les_LEDs (Couleur: string) {
+export function Allume_les_LEDs (Couleur: string) {
     moveMotorZIP = Kitronik_Move_Motor.createMoveMotorZIPLED(4)
     if (Couleur == "rouge") {
         moveMotorZIP.setColor(Kitronik_Move_Motor.colors(Kitronik_Move_Motor.ZipLedColors.Red))
